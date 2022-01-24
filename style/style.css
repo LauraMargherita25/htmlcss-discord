@@ -126,10 +126,42 @@
 .section img{
     width: 50%;
     height: 100%;
-    float: left;
 }
 
 .section article{
     width: 50%;
+    padding: 3rem;
+}
+
+.white img{
+    float: left;
+}
+
+.white article{
     float: right;
+}
+
+.gray{
+    background-color: #f6f6f6;
+}
+
+.gray img{
+    float: right;
+}
+
+.gray article{
+    float: left;
+}
+
+.centered article{
+    width: 100%;
+    text-align: center;
+}
+
+.centered img{
+    width: 100%;
+}
+
+.ruready{
+    background-image: url(../img/stars.svg);
 }
