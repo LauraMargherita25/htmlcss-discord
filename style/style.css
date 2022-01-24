@@ -6,17 +6,18 @@
 }
 
 :root{
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 /* /css reset */
 
-.header-container{
+/* big intro section */
+.top-container{
     background-color: #255ee9;
     width: 100%;
 }
 
-.header-container header{
+.top-container header{
     width: 1180px;
     padding: 1rem 0;
     margin:auto;
@@ -24,7 +25,7 @@
     text-align: center;
 }
 
-.header-container img{
+.top-container img{
     float: left;
     height: 2.5rem;
 }
@@ -39,7 +40,6 @@
     font-weight: 600;
     text-decoration: none;
     padding: 0 1rem;
-
 }
 
 .log-in{
@@ -50,7 +50,7 @@
 
     color: #23272a;
     text-decoration: none;
-    ;
+    
     
     background-color: #ffffff;
 }
@@ -64,9 +64,14 @@
     position: relative;
 }
 
-.presentation{
-    width: 70%;
-    
+.hero{
+    max-width: 1180px;
+    height: 100%;
+    margin:auto;
+}
+
+.hero .presentation{
+    max-width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -91,7 +96,6 @@
     display: inline-block;
 
     text-decoration: none;
-    font-weight: 900;
 
     margin: .5rem;
     padding: 1rem;
@@ -107,30 +111,37 @@
     color: #ffffff;
     background-color: #23272a;
 }
+/* /big intro section */
 
-
-
-
-
-
+/* white gray section */
 .section{
-    padding: 120px 40px;
+    width: 100%;
+    padding: 120px 0;
 }
 
-.section, .clear-fix{
+.clear-fix::after{
     content: "";
     display: table;
     clear: both;
 }
 
-.section img{
+.content{
+    max-width: 1180px;
+    margin:auto;
+}
+
+.content img{
     width: 50%;
     height: 100%;
 }
 
-.section article{
-    width: 50%;
-    padding: 3rem;
+.content article{
+    width: 30%;
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 1rem;
 }
 
 .white img{
@@ -153,25 +164,46 @@
     float: left;
 }
 
+.centered{
+    text-align: center;
+} 
+
 .centered article{
     width: 100%;
-    text-align: center;
 }
 
 .centered img{
     width: 100%;
+    float: none;
 }
+
 
 .ruready{
-    display: inline-block;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
 }
 
-.ruready h1{
-   background-image: url(../img/stars.svg);
-   text-align: center;
+.ruready h2{
+    margin-bottom: 1rem;
+    line-height: 3;
 }
 
 .centered .download{
     background-color: #8ea1e1;
     color: #ffffff;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 40px;
 }
+
+ .wave path{ 
+    fill: #f6f6f6;
+}/*.wave-reverse path */
+/* white gray section */
