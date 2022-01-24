@@ -163,11 +163,15 @@
 }
 
 .ruready{
+    display: inline-block;
+}
+
+.ruready h1{
    background-image: url(../img/stars.svg);
    text-align: center;
 }
 
 .centered .download{
     background-color: #8ea1e1;
-    color: ;
+    color: #ffffff;
 }
