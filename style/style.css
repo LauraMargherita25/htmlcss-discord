@@ -107,3 +107,29 @@
     color: #ffffff;
     background-color: #23272a;
 }
+
+
+
+
+
+
+.section{
+    padding: 120px 40px;
+}
+
+.section, .clear-fix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section img{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.section article{
+    width: 50%;
+    float: right;
+}
